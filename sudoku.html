@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Solver</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sudoku Solver</h1>
+
+        <!-- Difficulty Selector -->
+        <div class="difficulty">
+            <label for="difficulty-level">Select Difficulty:</label>
+            <select id="difficulty-level">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+        </div>
+
+        <table id="sudoku-board">
+            <tbody>
+                <!-- Rows will be added using JavaScript -->
+            </tbody>
+        </table>
+        
+        <div class="buttons">
+            <button id="generate-button">Generate Puzzle</button>
+            <button id="solve-button">Solve</button>
+            <button id="clear-button">Clear</button>
+        </div>
+
+        <!-- Link to go back to the home page -->
+        <div>
+            <button onclick="window.location.href='index.html'">Back to Home</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
